@@ -11,6 +11,7 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px; /*установили ограничения для секции */
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -29,7 +30,8 @@
   width: 736px;
   line-height: 96px;
   font-size: 102px;
-  margin-right: 64px;
+  font-weight: bolder;
+  margin-left: 64px;
   z-index: 2; /*при ширине окна меньше 1220 картинка перекрывает текст поэтому используем это св-во*/
 }
 
