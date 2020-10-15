@@ -1,14 +1,14 @@
 .page {
-  min-width: 1100px; /* мы ещё не умеем делать мобильную версию сайта, */
-  max-width: 1600px; /*установили ограничение по максимальной ширине */
-  margin: 0 auto; /* выше для экранов больше 1600px отцентрировали весь контент */
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .header {
   height: 100vh;
   min-height: 600px;
-  max-height: 756px; /*установили ограничения для секции */
+  max-height: 756px;
   position: relative;
   display: flex;
   align-items: center;
@@ -31,7 +31,7 @@
   font-size: 102px;
   font-weight: bolder;
   margin-left: 64px;
-  z-index: 2; /*при ширине окна меньше 1220 картинка перекрывает текст поэтому используем это св-во*/
+  z-index: 2;
 }
 
 .header__subtitle {
@@ -237,7 +237,75 @@
   background-image: url(../images/kaufman-triangle.svg);
   width: 877px;
   height: 877px;
+  background-size: contain;
   position: absolute;
   right: -210px;
+  top: 0;
   z-index: 1;
+}
+
+.footer {
+  flex-basis: 711px;
+  background-color: #1f1f1f;
+  color: white;
+  position: relative;
+  display: flex;
+  min-height: 350px;
+}
+
+.footer__columns {
+  margin: 60px auto 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.footer__column_content_copyright {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.logo_place_footer {
+  height: 35px;
+  width: 183px;
+  position: static;
+}
+
+.footer__author {
+  margin: 18px o;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.footer__column_links {
+  list-style: none;
+  line-height: 30px;
+  font-size: 18px;
+  padding-left: 0;
+}
+
+.footer__social-icon {
+  margin-right: 10px;
+  height: 16px;
+  width: 16px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__link:hover {
+  color: #2f80ed;
 }
