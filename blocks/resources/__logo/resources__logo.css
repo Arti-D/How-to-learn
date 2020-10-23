@@ -1,0 +1,12 @@
+.resources__logo {
+    height: 38px;
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity .5s linear;
+}
+
+.resources__logo:hover {
+    opacity: .6;
+}
